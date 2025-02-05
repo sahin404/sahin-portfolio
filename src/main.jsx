@@ -8,8 +8,11 @@ import router from './routes/Routes';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <React.StrictMode>
-      <RouterProvider router={router}/>
-    </React.StrictMode>
+    <div className="bg-[#221238] min-h-screen">
+      <React.StrictMode>
+        <RouterProvider router={router} />
+      </React.StrictMode>
+    </div>
+
   </StrictMode>,
 )
