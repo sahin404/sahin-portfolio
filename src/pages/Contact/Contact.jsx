@@ -9,7 +9,7 @@ const Contact = () => {
       <Helmet>
         <title>Sahin | Contact</title>
       </Helmet>
-      <div className="flex flex-col lg:flex-row justify-center gap-12 items-center">
+      <div className="flex flex-col lg:flex-row justify-center gap-12 items-center p-3 md:p-0">
         {/* Left */}
         <div className="bg-[#090415] p-6 lg:p-10 md:w-2/3 lg:w-1/2 lg:ml-48 rounded-2xl space-y-5">
           <h1 className="text-2xl text-white">Get in touch</h1>

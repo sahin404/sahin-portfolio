@@ -25,7 +25,7 @@ export const Navbar = () => {
 
   const location = useLocation();
   return (
-    <nav className="flex items-center justify-between px-20 pt-3 text-white">
+    <nav className="flex items-center justify-between px-5 md:px-20 pt-3 text-white">
       <div className="duration-200 hover:scale-110 flex items-center">
 
         <img className='h-32' src="/white.png" alt="" />

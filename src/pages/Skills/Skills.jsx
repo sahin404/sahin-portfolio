@@ -16,25 +16,27 @@ const Skills = () => {
   Plugins:
     - @tailwindcss/forms
 */}
-<h1 className="text-3xl text-orange-500 text-center mb-10 font-semibold ">My Skills</h1>
-<Tabs defaultIndex={0}>
-    <TabList className="flex items-center justify-center mb-14 text-center gap-5 text-gray-300">
-      <Tab selectedClassName="bg-[#520bb6]" className="border border-[#520bb6] p-3 rounded-3xl font-semibold cursor-pointer text-sm md:text-[16px]">Web Development</Tab>
-      <Tab selectedClassName="bg-[#520bb6]" className="border border-[#520bb6] p-3 rounded-3xl font-semibold cursor-pointer text-sm md:text-[16px]">Other Tech Skills</Tab>
-      <Tab selectedClassName="bg-[#520bb6]" className="border border-[#520bb6] p-3 rounded-3xl font-semibold cursor-pointer text-sm  md:text-[16px]">Soft Skills</Tab>
-    </TabList>
-    
-    {/* Web Related Skill */}
-    <TabPanel >
-      <WebSkills/>
-    </TabPanel>
-    <TabPanel >
-      <TechSkills/>
-    </TabPanel>
-    <TabPanel >
-      <SoftSkills/>
-    </TabPanel>
-  </Tabs>
+      <h1 className="text-3xl text-orange-500 text-center mb-10 font-semibold">My Skills</h1>
+      <Tabs defaultIndex={0}>
+        <div className="px-5 md:px-2">
+          <TabList className="flex items-center justify-center mb-14 text-center gap-5 text-gray-300">
+            <Tab selectedClassName="bg-[#520bb6]" className="border border-[#520bb6] p-3 rounded-3xl font-semibold cursor-pointer text-sm md:text-[16px]">Web Development</Tab>
+            <Tab selectedClassName="bg-[#520bb6]" className="border border-[#520bb6] p-3 rounded-3xl font-semibold cursor-pointer text-sm md:text-[16px]">Other Tech Skills</Tab>
+            <Tab selectedClassName="bg-[#520bb6]" className="border border-[#520bb6] p-3 rounded-3xl font-semibold cursor-pointer text-sm  md:text-[16px]">Soft Skills</Tab>
+          </TabList>
+
+        </div>
+
+        <TabPanel >
+          <WebSkills />
+        </TabPanel>
+        <TabPanel >
+          <TechSkills />
+        </TabPanel>
+        <TabPanel >
+          <SoftSkills />
+        </TabPanel>
+      </Tabs>
 
     </div>
   )
