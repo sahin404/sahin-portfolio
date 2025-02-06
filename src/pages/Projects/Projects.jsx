@@ -7,7 +7,7 @@ const Projects = () => {
             <title>Sahin | Projects</title>
         </Helmet>
         <div className="flex items-center justify-center mt-20">
-            <div className="text-white text-3xl">Project not found!</div>
+            <div className="text-gray-400 text-3xl">Project not found!</div>
         </div>
     </div>
   )
