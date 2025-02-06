@@ -17,6 +17,7 @@ const Home = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-orange-500">Full Stack Web Developer</h1>
         <h1 className="text-md lg:text-lg text-justify">I build high-performance, user-friendly applications using the MERN stack. My goal is to create modern web solutions that enhance user experience and deliver seamless functionality.</h1>
         <div className="flex justify-center lg:justify-start items-center space-x-4 pb-8 lg:pb-0">
+          {/* To do: Cursor Allow */}
           <button className=" flex items-center gap-3 border rounded-3xl p-4 border-[#520bb6] duration-200 hover:bg-[#520bb6] cursor-not-allowed text-sm lg:text-md">
             <span>Download CV </span>
             <IoMdDownload className="text-lg"></IoMdDownload>
