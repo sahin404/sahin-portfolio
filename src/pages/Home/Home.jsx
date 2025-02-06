@@ -3,7 +3,7 @@ import { FaFacebookF, FaLinkedinIn } from "react-icons/fa"
 import { FaXTwitter } from "react-icons/fa6"
 import { FiGithub } from "react-icons/fi"
 import { IoMdDownload } from "react-icons/io"
-import { Link } from "react-router-dom"
+import { Link} from "react-router-dom"
 
 
 const Home = () => {

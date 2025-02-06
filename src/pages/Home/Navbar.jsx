@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useRef } from 'react';
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 export const Navbar = () => {
@@ -23,6 +23,7 @@ export const Navbar = () => {
     };
   }, []);
 
+  const location = useLocation();
   return (
     <nav className="flex items-center justify-between px-20 pt-3 text-white">
       <div className="duration-200 hover:scale-110 flex items-center">
@@ -32,18 +33,18 @@ export const Navbar = () => {
       </div>
       <ul className="hidden items-center justify-between gap-10 md:flex">
         <Link to="/"><li className="group flex  cursor-pointer flex-col">
-          Home<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+          Home<span className={`mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 ${location.pathname==='/'?'w-full':'group-hover:w-full'} `}></span>
         </li></Link>
         <Link to="/about"><li className="group flex  cursor-pointer flex-col">
-          About<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+          About<span className={`mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 ${location.pathname==='/about'?'w-full':'group-hover:w-full'} `}></span>
         </li></Link>
         <Link to="/skills"> <li className="group flex  cursor-pointer flex-col">
-          Skills<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+          Skills<span className={`mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 ${location.pathname==='/skills'?'w-full':'group-hover:w-full'} `}></span>
         </li>
         </Link>
 
         <Link to="/contact"><li className="group flex  cursor-pointer flex-col">
-          Contact<span className="mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 group-hover:w-full"></span>
+          Contact<span className={`mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 ${location.pathname==='/contact'?'w-full':'group-hover:w-full'} `}></span>
         </li></Link>
         <Link to="/contact"><li className="group flex  cursor-pointer flex-col">
           <button className="relative overflow-hidden p-4 rounded-3xl text-white">
