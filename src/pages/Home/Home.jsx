@@ -14,8 +14,8 @@ const Home = () => {
       </Helmet>
       <div className="text-white mt-10 lg:mt-0 px-10 text-center lg:text-left lg:px-0 lg:w-1/2 space-y-5">
         <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold">Md Sahin Alam</h1>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-orange-500">Full Stack Web Developer</h1>
-        <h1 className="text-md lg:text-lg text-justify">I build high-performance, user-friendly applications using the MERN stack. My goal is to create modern web solutions that enhance user experience and deliver seamless functionality.</h1>
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-orange-500">MERN Stack Developer</h1>
+        <h1 className="text-md lg:text-lg text-justify">I am a versatile MERN Stack Developer. My expertise lies in React, Tailwind CSS, and JavaScript, crafting seamless and user-friendly interfaces. On the backend, I am proficient in Node.js, Express.js, and MongoDB, ensuring scalable and efficient solutions.</h1>
         <div className="flex justify-center lg:justify-start items-center md:space-x-4 flex-col space-y-4 md:space-y-0 md:flex-row pb-8 lg:pb-0">
           {/* To do: Cursor Allow */}
           <button className=" flex items-center gap-3 border rounded-3xl p-4 border-[#520bb6] duration-200 hover:bg-[#520bb6] cursor-not-allowed text-sm lg:text-md">
