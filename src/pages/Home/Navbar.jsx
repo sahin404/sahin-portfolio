@@ -46,10 +46,10 @@ export const Navbar = () => {
           Projects<span className={`mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 ${location.pathname === '/projects' ? 'w-full' : 'group-hover:w-full'} `}></span>
         </li>
         </Link>
-
+{/* 
         <Link to="/contact"><li className="group flex  cursor-pointer flex-col">
           Contact<span className={`mt-[2px] h-[3px]  w-[0px] rounded-full bg-sky-500 transition-all duration-300 ${location.pathname === '/contact' ? 'w-full' : 'group-hover:w-full'} `}></span>
-        </li></Link>
+        </li></Link> */}
         <Link to="/contact"><li className="group flex  cursor-pointer flex-col">
           <button className="relative overflow-hidden p-4 rounded-3xl text-white">
             <span className="absolute inset-0 bg-gradient-to-r from-[#8e42d6] to-[#411086] transition-opacity duration-300 group-hover:opacity-0"></span>

@@ -67,7 +67,8 @@ const Home = () => {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="flex items-center gap-3 border rounded-3xl p-4 border-[#520bb6] duration-200 hover:bg-[#520bb6] cursor-not-allowed text-sm lg:text-md"
+            onClick={()=>window.open('CV.pdf', '_blank')}
+            className="flex items-center gap-3 border rounded-3xl p-4 border-[#520bb6] duration-200 hover:bg-[#520bb6] text-sm lg:text-md"
           >
             <span>Download CV </span>
             <IoMdDownload className="text-lg"></IoMdDownload>
