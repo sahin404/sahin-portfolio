@@ -10,7 +10,7 @@ const Projects = () => {
       <Helmet>
         <title>Sahin | Projects</title>
       </Helmet>
-      <div className="grid grid-cols-5 gap-10 px-12 py-5">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-10 px-12 py-5">
         <ProjectCart
           image={delibazar}
           name="DeliBazar – E-Commerce Website"
