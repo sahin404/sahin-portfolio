@@ -12,11 +12,11 @@ const TechSkills = () => {
     ];
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+        <div className="grid grid-cols-3 md:grid-cols-3 gap-5">
             {skills.map((skill, index) => (
                 <div
                     key={index}
-                    className="bg-[#0f061a] text-white w-28 px-5 py-5 rounded-3xl flex flex-col items-center border border-transparent hover:border-[#520bb6] duration-500"
+                    className="bg-[#0f061a] text-white w-28 h-28 justify-center rounded-3xl flex flex-col items-center border border-transparent hover:border-[#520bb6] duration-500 text-center"
                 >
                     {skill.icon}
                     <h1 className="font-semibold text-sm mt-2">{skill.name}</h1>

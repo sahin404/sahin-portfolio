@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async"
+import ProjectCart from "./ProjectCart"
 
 const Projects = () => {
   return (
@@ -6,8 +7,8 @@ const Projects = () => {
         <Helmet>
             <title>Sahin | Projects</title>
         </Helmet>
-        <div className="flex items-center justify-center mt-20">
-            <div className="text-gray-400 text-3xl">Project not found!</div>
+        <div className="grid grid-cols-3 gap-10 p-10">
+          <ProjectCart></ProjectCart>
         </div>
     </div>
   )
