@@ -12,7 +12,7 @@ const TechSkills = () => {
     ];
 
     return (
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-3 p-3 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {skills.map((skill, index) => (
                 <div
                     key={index}

@@ -22,7 +22,7 @@ const WebSkills = () => {
         { icon: <BiLogoMongodb className="text-4xl text-[#55AD47]" />, name: "MongoDB" },
       ];
     return (
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-3 p-3 lg:grid-cols-4 gap-5">
             {skills.map((skill, index) => (
                 <div
                     key={index}

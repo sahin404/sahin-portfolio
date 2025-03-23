@@ -14,7 +14,7 @@ const SoftSkills = () => {
   ];
 
   return (
-    <div className="grid grid-cols-2 gap-5">
+    <div className="grid grid-cols-3 md:grid-cols-1 lg:grid-cols-2 gap-5 p-3">
       {skills.map((skill, index) => (
         <div
           key={index}

@@ -14,7 +14,7 @@ const Skills = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="flex flex-col md:flex-row gap-20 mt-10"
+        className="flex flex-col md:flex-row gap-10 lg:gap-16 md:mt-10"
       >
         <motion.div
           initial={{ opacity: 0, y: 30 }}
