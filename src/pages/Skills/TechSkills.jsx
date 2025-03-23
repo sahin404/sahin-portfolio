@@ -1,70 +1,29 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-// import required modules
-import { Pagination } from 'swiper/modules';
 import { FcLinux } from 'react-icons/fc';
 import { GiCyberEye } from 'react-icons/gi';
 import { TbBrandCpp } from 'react-icons/tb';
 import { SiGooglemarketingplatform } from 'react-icons/si';
+
 const TechSkills = () => {
+    const skills = [
+        { icon: <FcLinux className="text-4xl" />, name: "Linux" },
+        { icon: <GiCyberEye className="text-4xl" />, name: "Cyber Security" },
+        { icon: <TbBrandCpp className="text-4xl" />, name: "Programming" },
+        { icon: <SiGooglemarketingplatform className="text-4xl" />, name: "Digital Marketing" },
+    ];
+
     return (
-        <div>
-            <Swiper
-                slidesPerView={7}
-                spaceBetween={10}
-                centeredSlides={true}
-                pagination={{
-
-                    clickable: true,
-                    el: ".custom-pagination", // Custom class for pagination
-                }}
-                breakpoints={{
-                    320: { slidesPerView: 1 },  // Mobile screens
-                    480: { slidesPerView: 2 },  // Small tablets
-                    768: { slidesPerView: 4 },  // Tablets
-                    1024: { slidesPerView: 6 }, // Laptops
-                    1280: { slidesPerView: 7 }, // Large screens
-                }}
-                modules={[Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    {/* Linux */}
-                    <div className=" bg-[#0f061a] text-white h-52 w-44 px-10 py-10 rounded-3xl flex flex-col items-center space-y-5 mx-5 group border border-transparent hover:border-[#520bb6] duration-500">
-                        <FcLinux className="text-7xl transition-transform duration-500 group-hover:scale-110 text-orange-400" />
-                        <h1 className="font-semibold">Linux</h1>
-                    </div>
-                </SwiperSlide>
-
-                {/* Cyber Security */}
-                <SwiperSlide>
-                    <div className=" bg-[#0f061a] text-white h-52 w-44 px-10 py-10 rounded-3xl flex flex-col items-center space-y-5 mx-5 group border border-transparent hover:border-[#520bb6] duration-500">
-                        <GiCyberEye className="text-7xl transition-transform duration-500 group-hover:scale-110 text-orange-400" />
-                        <h1 className="font-semibold ">Cyber Security</h1>
-                    </div>
-                </SwiperSlide>
-
-                {/* Programming */}
-                <SwiperSlide>                    
-                    <div className=" bg-[#0f061a] text-white h-52 w-44 px-10 py-10 rounded-3xl flex flex-col items-center space-y-5 mx-5 group border border-transparent hover:border-[#520bb6] duration-500">
-                        <TbBrandCpp className="text-7xl transition-transform duration-500 group-hover:scale-110 " />
-                        <h1 className="font-semibold ">Programming</h1>
-                    </div>
-                </SwiperSlide>
-                {/* Digital Marketing */}
-                <SwiperSlide>                    
-                    <div className=" bg-[#0f061a] text-white h-52 w-44 px-10 py-10 rounded-3xl flex flex-col items-center space-y-5 mx-5 group border border-transparent hover:border-[#520bb6] duration-500">
-                        <SiGooglemarketingplatform className="text-7xl transition-transform duration-500 group-hover:scale-110 " />
-                        <h1 className="font-semibold ">Digital Markeing</h1>
-                    </div>
-                </SwiperSlide>
-
-            </Swiper>
-            <div className="custom-pagination mt-5 flex justify-center"></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2">
+            {skills.map((skill, index) => (
+                <div
+                    key={index}
+                    className="bg-[#0f061a] text-white w-28 px-5 py-5 rounded-3xl flex flex-col items-center border border-transparent hover:border-[#520bb6] duration-500"
+                >
+                    {skill.icon}
+                    <h1 className="font-semibold text-sm mt-2">{skill.name}</h1>
+                </div>
+            ))}
         </div>
-    )
-}
+    );
+};
 
-export default TechSkills
+export default TechSkills;
