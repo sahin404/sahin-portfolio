@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { motion } from "framer-motion"; // Importing motion
 import WebSkills from '../Skills/WebSkills';
 import TechSkills from '../Skills/TechSkills';
 import SoftSkills from "./SoftSkills";
@@ -9,17 +10,39 @@ const Skills = () => {
       <Helmet>
         <title>Sahin | Skills</title>
       </Helmet>
-      <div className="grid grid-cols-8 p-5 gap-12">
-        <div className="col-span-3">
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, ease: "easeOut" }}
+        className="grid grid-cols-8 p-5 gap-12"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 0.5 }}
+          className="col-span-3"
+        >
           <WebSkills />
-        </div>
-        <div className="col-span-3">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 1 }}
+          className="col-span-3"
+        >
           <TechSkills />
-        </div>
-        <div className="col-span-2">
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut", delay: 1.5 }}
+          className="col-span-2"
+        >
           <SoftSkills />
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };
