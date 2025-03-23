@@ -82,11 +82,11 @@ export const Navbar = () => {
               </li>
             </Link>
 
-            <Link to="/contact">
+            {/* <Link to="/contact">
               <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">
                 Contact
               </li>
-            </Link>
+            </Link> */}
 
           </ul>
         )}
